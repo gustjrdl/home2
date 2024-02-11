@@ -12,7 +12,7 @@ public class Main {
 
         long ac = (long) Math.pow(10, 12);
 
-        if (1 <= a && a<= ac &&1 <= b && b<= ac&& 1 <= c && c<= ac)
+        if (1 <= a && a<= ac && 1 <= b && b<= ac && 1 <= c && c<= ac)
         {
             System.out.println(a+b+c);
         }
