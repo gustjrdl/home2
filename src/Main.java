@@ -6,15 +6,22 @@ public class Main {
     public static void main(String args[]) throws Exception{
         Scanner sc = new Scanner(System.in);
 
-        int a= sc.nextInt();
+        int x = sc.nextInt();
+        int y = sc.nextInt();
 
-        if(a >=1 && a<=4000 && a%4 == 0 && a%100 != 0) {
-            System.out.println("1");
-        } else if (a >=1 && a<=4000 && a%400 == 0) {
-            System.out.println("1");
-        }
-        else {
-            System.out.println("0");
+        if (-1000 <= x && x <= 1000 && x != 0 && -1000 <= y && y <= 1000 && y != 0){
+            if(x > 0 && y > 0) {
+                System.out.println("1");
+            }
+            if(x < 0 && y > 0) {
+                System.out.println("2");
+            }
+            if(x < 0 && y < 0) {
+                System.out.println("3");
+            }
+            if(x > 0 && y < 0) {
+                System.out.println("4");
+            }
         }
     }
 }
