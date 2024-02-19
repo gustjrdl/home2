@@ -8,20 +8,22 @@ public class Main {
 
         int h = sc.nextInt();
         int m = sc.nextInt();
+        int c = sc.nextInt();
 
-        if(h >= 0 && h <= 23 && m >= 0 && m <= 59 ){
-            if(m < 45){
-                m+=15;
-                h-=1;
-            } else if (m >= 45) {
-                m-=45;
-            }
-            if(h < 0) {
-                h+=24;
-            }
+        h += c / 60;
+        m += c % 60;
+
+        if(m >= 60) {
+            h+=1;
+            m-=60;
+        }
+        if(h >= 24) {
+            h-=24;
         }
         System.out.println(h + " " + m);
+        System.out.println();
 
     }
+
 }
 
