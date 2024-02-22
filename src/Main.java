@@ -8,8 +8,10 @@ public class Main {
 
         int a = sc.nextInt();
 
-        for(int i = 1; a<=9&& 9 >= i; i++){
-            System.out.println(a + " * " + i + " = " + a*i);
+        for(int i = 1; a >= i; i++) {
+            int b = sc.nextInt();
+            int c = sc.nextInt();
+            System.out.println(b+c);
         }
     }
 }
